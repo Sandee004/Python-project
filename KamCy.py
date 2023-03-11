@@ -45,6 +45,7 @@ def computeTotal():
     time.sleep(1)
     os.system("clear")
     #generate a new list with the prices
+    #loop through each row and get the item with index 1 which is the price. Then convert it from a string to a float
     priceList= [float(item[1]) for item in todo]
     total = 0
     #loop through the new list and add all elements to total
